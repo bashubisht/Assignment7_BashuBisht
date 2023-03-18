@@ -1,0 +1,41 @@
+$displayColor_A: #fc852a;
+$background: rgb(234, 182, 142);
+$displayColor_B: #9d9998;
+$displayColor_C: #906a42;
+
+/*$bubbleColor: rgba(255, 255, 255, 0.2);*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap");
+@import "home";
+@import "about";
+@import "container";
+@import "footer";
+@import "contact";
+@import "feedback";
+%align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%align-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+%align-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+* {
+  margin: 20;
+  padding: 20;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: $background;
+}

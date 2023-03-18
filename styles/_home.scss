@@ -1,0 +1,27 @@
+.home {
+  padding: 1rem;
+  border-bottom: 1px solid #2d2e36;
+  @extend %align-between;
+  &_header {
+    font-weight: 600;
+    color: #f00a0a;
+    &:hover {
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+      color: #ee4f0a;
+    }
+  }
+  &_button {
+    background-color: $displayColor_A;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

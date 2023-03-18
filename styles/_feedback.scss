@@ -1,0 +1,45 @@
+.feedbackcontainer {
+    background-image: url("/images/final.png");
+    background-size: 2200px;
+    padding-top: 50px;
+    width: 100%;
+    padding-bottom: 30px;
+  
+    & .row {
+      margin: 20px;
+  
+      & .col1 label {
+        padding: auto;
+        display: inline;
+        font-size: 1em;
+        font-weight: 700;
+      }
+  
+      & .col2 input[type=text], select, textarea {
+        width: 50%;
+        padding: 12px;
+        border: 2px solid brown;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+      }
+  
+      & input[type=submit] {
+        background-color: coral;
+        border: 2px;
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+        width: 120px;
+        height: 40px;
+      }
+    
+    }
+    
+  }

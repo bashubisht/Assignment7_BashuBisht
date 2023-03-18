@@ -1,0 +1,44 @@
+$bubble_height: 100px;
+$bubble_width: 100px;
+@mixin cakelogo {
+  background-image: url(/images/logo.png);
+  background-size: 100px;
+  position: absolute;
+  height: $bubble_height;
+  width: $bubble_width;
+}
+@mixin position($for, $val) {
+  #{$for}: $val;
+}
+.container {
+  background-color: $displayColor_C;
+  padding: 1rem 2rem;
+  margin: 3rem auto;
+  max-width: 70vw;
+  color: rgb(19, 15, 240);
+  border-radius: 0px;
+  // height: 130px;
+  position: relative;
+  overflow: hidden;
+  @extend %align-center;
+  @media screen and (max-width: 768px) {
+    max-width: 60vw;
+  }
+  &_header {
+    font-weight: 300;
+    color: #e5ebeb;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 1.5em;
+  }
+  &_logo1 {
+    @include cakelogo;
+    @include position("top", auto);
+    @include position("left", 0px);
+  }
+  &_logo2 {
+    @include cakelogo;
+    @include position("bottom", auto);
+    @include position("right", 0px);
+  }
+}
